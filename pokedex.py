@@ -6,7 +6,7 @@ def pokedex():
     st.title("Pokemon Dashboard")
 
     # Fetching all pokemons from the PokeAPI
-    response = requests.get("https://pokeapi.co/api/v2/pokemon?limit=10")
+    response = requests.get("https://pokeapi.co/api/v2/pokemon?limit=100")
     if response.status_code == 200:
         data = response.json()
         pokemons = data["results"]
