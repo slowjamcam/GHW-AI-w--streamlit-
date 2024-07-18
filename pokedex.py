@@ -1,6 +1,11 @@
 import streamlit as st
 import requests
 
+    dataframe = pd.DataFrame(
+    np.random.randn(10, 20),
+    columns=('col %d' % i for i in range(20)))
+st.table(dataframe)
+
 def pokedex():
     # Main
     st.title("Pokemon Dashboard")

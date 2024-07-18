@@ -9,4 +9,5 @@ with st.sidebar:
         st.Page(pokemon_classifier, title="Pokemon Classificator", icon="🔍"),
     ])
 
+
 pg.run()
